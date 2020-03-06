@@ -1,9 +1,9 @@
 const {deployEscrow} = require('./common');
-const {expectBignumberEqual} = require('../../../../common/test/helpers');
+const {expectBignumberEqual} = require('../../helpers/');
 const {Currencies} = require('../../helpers/deploy');
 const {commonTests} = require('../../helpers/store-contribution');
-const {getTokens, moveToOpeningTime, shouldFailWithMessage, expectInvalidOpCode} = require('../../../../common/test/helpers/utils');
-const {getContributor, getNonWhitelistedAdress} = require('../../../../common/test/helpers/address');
+const {getTokens, moveToOpeningTime, shouldFailWithMessage, expectInvalidOpCode} = require('../../helpers/utils');
+const {getContributor, getNonWhitelistedAdress} = require('../../helpers/address');
 
 contract('StablecoinEscrow: confirmContribution', accounts => {
   let stablecoinEscrow;

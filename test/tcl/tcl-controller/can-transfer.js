@@ -1,5 +1,5 @@
-const {expect} = require('../../../../common/test/helpers');
-const {getTokens, toHex, hexToBytes, hexToUtf8} = require('../../../../common/test/helpers/utils');
+const {expect} = require('../../helpers');
+const {getTokens, toHex, hexToBytes, hexToUtf8} = require('../../helpers/utils');
 const {deployMockContract} = require('../../helpers/deploy');
 const {
   deployTclRepository,

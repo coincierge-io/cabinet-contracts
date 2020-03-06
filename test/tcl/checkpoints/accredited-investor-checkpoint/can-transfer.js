@@ -1,10 +1,10 @@
-const {expect} = require('../../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {
   getTokens,
   toHex,
   hexToBytes,
   hexToUtf8
-} = require('../../../../../common/test/helpers/utils');
+} = require('../../../helpers/utils');
 const {
   deployAccreditedInvestorCheckpoint,
   ethereumStatusCodes
@@ -16,10 +16,10 @@ const {
   registerCountry,
   registerAccreditedInvestor
 } = require('../../../identity/utils');
-const {add, fromSolDate} = require('../../../../../common/test/helpers/date');
-const {getTclActors} = require('../../../../../common/test/helpers/address');
+const {add, fromSolDate} = require('../../../helpers/date');
+const {getTclActors} = require('../../../helpers/address');
 const {deployCappedMintableToken} = require('../../../helpers/deploy');
-const {latestTime, increaseTimeTo} = require('../../../../../common/test/helpers/timeUtils');
+const {latestTime, increaseTimeTo} = require('../../../helpers/timeUtils');
 const {checkpointError} = require('../../../../../../js/packages/eth-utils/data/v1/checkpoint');
 
 contract('AccreditedInvestorCheckpoint: canTransfer', accounts => {

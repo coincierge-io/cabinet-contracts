@@ -1,4 +1,4 @@
-const {expectVMException} = require('../../../../common/test/helpers/utils');
+const {expectVMException} = require('../../helpers/utils');
 const {
   VALID_SIGNATURE_NONCE_0,
   INVALID_SIGNATURE,
@@ -6,10 +6,10 @@ const {
   NONCE_0,
   NONCE_1,
   VALID_SIGNATURE_NONCE_1_ACCOUNT_2
-} = require('../../../../common/test/helpers/signatures');
+} = require('../../helpers/signatures');
 const {
   getTeamFundAddress
-} = require('../../../../common/test/helpers/address');
+} = require('../../helpers/address');
 const {deploySignatureverifier} = require('../../helpers/deploy');
 
 contract('SignatureVerifier: verify', accounts => {

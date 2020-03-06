@@ -1,4 +1,4 @@
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deployMockContract} = require('../../helpers/deploy');
 const {
   deployTclRepository,
@@ -6,7 +6,7 @@ const {
   deployMockFailureCheckpoint,
   checkpointCodes
 } = require('../utils');
-const {ZERO_ADDRESS} = require('../../../../common/test/helpers/address');
+const {ZERO_ADDRESS} = require('../../helpers/address');
 
 contract('TclRepository: removeCheckpoints', accounts => {
   let tclRepository;

@@ -1,8 +1,8 @@
 const fs = require('fs');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
-const {expect} = require('../../../../common/test/helpers');
+const {shouldFailWithMessage} = require('../../helpers/utils');
+const {expect} = require('../../helpers');
 const {deployTclRepository, checkpointCodes} = require('../utils');
-const {getTclActors} = require('../../../../common/test/helpers/address');
+const {getTclActors} = require('../../helpers/address');
 const {deployMockContract} = require('../../helpers/deploy');
 const {deployClaimRegistry} = require('../../identity/utils');
 const {

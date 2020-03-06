@@ -1,12 +1,12 @@
-const {getTokens} = require('../../../../common/test/helpers/utils');
+const {getTokens} = require('../../helpers/utils');
 const {
   getContributor
-} = require('../../../../common/test/helpers/address');
+} = require('../../helpers/address');
 const {
   VALID_SIGNATURE_NONCE_0,
   INVALID_SIGNATURE,
   NONCE_0
-} = require('../../../../common/test/helpers/signatures');
+} = require('../../helpers/signatures');
 const {deployTokenDistribution} = require('../../helpers/deploy');
 
 contract('TokenDistribution: checkSignature', accounts => {

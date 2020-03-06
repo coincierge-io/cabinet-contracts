@@ -1,11 +1,11 @@
 const {deployTokenFactory, deployAssetRepository} = require('../../helpers/deploy');
 const {findEvent} = require('../../helpers/events');
-const {expect} = require('../../../../common/test/helpers');
-const {getTokenOwnerAddress} = require('../../../../common/test/helpers/address');
-const {getTclActors} = require('../../../../common/test/helpers/address');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {expect} = require('../../../helpers');
+const {getTokenOwnerAddress} = require('../../helpers/address');
+const {getTclActors} = require('../../helpers/address');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 const {getAccessToken} = require('../../../../../js/packages/eth-utils/data/v1/accessControl');
-const {getPrivateKeyFromAddress} = require('../../../../common/test/helpers/signatures');
+const {getPrivateKeyFromAddress} = require('../../helpers/signatures');
 const {getMethodSelectorFromAbi} = require('../../../../../js/packages/eth-utils/contracts/v1/Contract');
 
 const CappedMintableToken = artifacts.require('CappedMintableToken');

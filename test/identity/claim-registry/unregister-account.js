@@ -1,5 +1,5 @@
-const {expect} = require('../../../../common/test/helpers');
-const {shouldFailWithMessage, toHex, padRight} = require('../../../../common/test/helpers/utils');
+const {expect} = require('../../helpers');
+const {shouldFailWithMessage, toHex, padRight} = require('../../helpers/utils');
 const {findEvent} = require('../../helpers/events');
 const {
   deployClaimRegistry, 

@@ -1,5 +1,5 @@
-const {expectBignumberEqual} = require('../../../../common/test/helpers');
-const {getTokens} = require('../../../../common/test/helpers/utils');
+const {expectBignumberEqual} = require('../../../helpers');
+const {getTokens} = require('../../helpers/utils');
 const {createAccountId} = require('../../identity/utils');
 const {setupTests} = require('./utils');
 

@@ -1,7 +1,7 @@
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deployControllerRole} = require('../utils');
 const {findEvent} = require('../../helpers/events');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 
 contract('ControllerRole: renounceController', accounts => {
   const mainController = accounts[1];

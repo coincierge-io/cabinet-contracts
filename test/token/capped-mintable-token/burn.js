@@ -1,7 +1,7 @@
-const {expect} = require('../../../../common/test/helpers');
-const {expectVMException, million, toBigNumber} = require('../../../../common/test/helpers/utils');
+const {expect} = require('../../../helpers');
+const {expectVMException, million, toBigNumber} = require('../../helpers/utils');
 const {deployCappedMintableToken} = require('../../helpers/deploy');
-const {getDefaultAddress, getContributor} = require('../../../../common/test/helpers/address');
+const {getDefaultAddress, getContributor} = require('../../helpers/address');
 
 contract('CappedMintableToken: burn', accounts => {
   const MAX_SUPPLY = million(7000);

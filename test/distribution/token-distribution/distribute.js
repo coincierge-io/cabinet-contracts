@@ -1,16 +1,16 @@
-const {expectBignumberEqual} = require('../../../../common/test/helpers');
-const {expectVMException, getTokens} = require('../../../../common/test/helpers/utils');
+const {expectBignumberEqual} = require('../../helpers');
+const {expectVMException, getTokens} = require('../../helpers/utils');
 const {
   getContributor
-} = require('../../../../common/test/helpers/address');
+} = require('../../helpers/address');
 const {
   VALID_SIGNATURE_NONCE_0,
   INVALID_SIGNATURE,
   NONCE_0,
   MESSAGE
-} = require('../../../../common/test/helpers/signatures');
+} = require('../../helpers/signatures');
 const {deployTokenDistribution} = require('../../helpers/deploy');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 
 contract('TokenDistribution: distribute', accounts => {
   let tokenInstance;

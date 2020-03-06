@@ -1,8 +1,8 @@
 const CappedMintableToken = artifacts.require('CappedMintableToken')
 const TokenDistribution = artifacts.require('TokenDistribution')
-const {expect} = require('../../../../common/test/helpers')
+const {expect} = require('../../helpers')
 const {deployCrowdsaleEscrow, tokenAvailableForSaleInMillions} = require('../../helpers/deploy')
-const {getContributor, getDefaultAddress, getWalletAddress} = require('../../../../common/test/helpers/address')
+const {getContributor, getDefaultAddress, getWalletAddress} = require('../../helpers/address')
 const {findEvent} = require('../../helpers/events')
 const {
   toWei, 
@@ -10,7 +10,7 @@ const {
   balanceDeltaAfterAction, 
   million, 
   moveToOpeningTime
-} = require('../../../../common/test/helpers/utils')
+} = require('../../helpers/utils')
 
 contract('CrowdsaleEscrow: finalize', accounts => {
   let crowdsaleEscrow;

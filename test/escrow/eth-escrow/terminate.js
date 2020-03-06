@@ -1,7 +1,7 @@
-const {expect} = require('../../../../common/test/helpers')
+const {expect} = require('../../helpers/')
 const {deployEthEscrow} = require('../../helpers/deploy')
-const {getContributor, getWalletAddress} = require('../../../../common/test/helpers/address')
-const {toWei, balanceDeltaAfterAction, moveToOpeningTime} = require('../../../../common/test/helpers/utils')
+const {getContributor, getWalletAddress} = require('../../helpers/address')
+const {toWei, balanceDeltaAfterAction, moveToOpeningTime} = require('../../helpers/utils')
 const {findEvent} = require('../../helpers/events')
 
 contract('EthEscrow: terminate', accounts => {

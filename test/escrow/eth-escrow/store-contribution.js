@@ -1,6 +1,6 @@
 const {commonTests} = require('../../helpers/store-contribution')
 const {deployEthEscrow, Currencies} = require('../../helpers/deploy')
-const {toWei} = require('../../../../common/test/helpers/utils')
+const {toWei} = require('../../helpers/utils')
 
 contract('EthEscrow: storeContibution', accounts => {
   // Here we're also testing that the storeContribution from the base contract is invoked

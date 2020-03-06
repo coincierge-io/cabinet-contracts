@@ -1,4 +1,4 @@
-const {expect} = require('../../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 
 const {
   deployKycAmlCheckpoint
@@ -10,8 +10,8 @@ const {
   createClaim,
   claimKeys
 } = require('../../../identity/utils');
-const {add} = require('../../../../../common/test/helpers/date');
-const {increaseTimeTo} = require('../../../../../common/test/helpers/timeUtils');
+const {add} = require('../../../helpers/date');
+const {increaseTimeTo} = require('../../../helpers/timeUtils');
 
 contract('KycAmlCheckpoint: isRegistered', accounts => {
   let kycAmlCheckpoint;

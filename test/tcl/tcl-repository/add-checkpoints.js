@@ -1,7 +1,7 @@
-const {expect} = require('../../../../common/test/helpers');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {expect} = require('../../helpers');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 const {deployMockContract} = require('../../helpers/deploy');
-const {ZERO_ADDRESS} = require('../../../../common/test/helpers/address');
+const {ZERO_ADDRESS} = require('../../helpers/address');
 const {
   deployTclRepository,
   deployMockSuccessCheckpoint,

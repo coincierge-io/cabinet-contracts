@@ -2,15 +2,15 @@ const CappedMintableToken = artifacts.require('CappedMintableToken')
 const TokenDistribution = artifacts.require('TokenDistribution')
 const EthEscrow = artifacts.require('EthEscrow')
 const StablecoinEscrow = artifacts.require('StablecoinEscrow')
-const {expect} = require('../../../../common/test/helpers')
+const {expect} = require('../../helpers/')
 const {deployEscrowManager, tokenAvailableForSaleInMillions} = require('../../helpers/deploy')
-const {getContributor, getDefaultAddress} = require('../../../../common/test/helpers/address')
+const {getContributor, getDefaultAddress} = require('../../helpers/address')
 const {findEvent} = require('../../helpers/events')
 const {
   shouldFailWithMessage,
   moveToClosingTime,
   million
-} = require('../../../../common/test/helpers/utils')
+} = require('../../helpers/utils')
 
 contract('EscrowManager: finalize', accounts => {
   let escrowManager;

@@ -1,12 +1,12 @@
-const {expect} = require('../../../../common/test/helpers')
+const {expect} = require('../../helpers/')
 const {deployEthEscrow, Currencies} = require('../../helpers/deploy')
-const {getContributor, getDefaultAddress} = require('../../../../common/test/helpers/address')
+const {getContributor, getDefaultAddress} = require('../../helpers/address')
 const {
   toWei, 
   shouldFailWithMessage, 
   balanceDeltaAfterAction, 
   moveToOpeningTime
-} = require('../../../../common/test/helpers/utils')
+} = require('../../helpers/utils')
 const {findEvent} = require('../../helpers/events')
 
 contract('EthEscrow: withdraw', accounts => {

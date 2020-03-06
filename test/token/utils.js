@@ -1,7 +1,7 @@
 const IssuerRole = artifacts.require('IssuerRole');
-const {getDefaultAddress, getTclActors} = require('../../../common/test/helpers/address');
+const {getDefaultAddress, getTclActors} = require('../../helpers/address');
 const {deployAndSetupCng1400} = require('../helpers/deploy');
-const {toHex, hexToBytes} = require('../../../common/test/helpers/utils');
+const {toHex, hexToBytes} = require('../../helpers/utils');
 const {
   deployCountryLimitCheckpoint, 
   deployMockSuccessCheckpoint,

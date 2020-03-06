@@ -1,5 +1,5 @@
-const {toHex, hexToBytes} = require('../../../../common/test/helpers/utils');
-const {getTclActors} = require('../../../../common/test/helpers/address');
+const {toHex, hexToBytes} = require('../../helpers/utils');
+const {getTclActors} = require('../../helpers/address');
 const {deployClaimRegistry} = require('../../identity/utils');
 const {deployTclRepository, deployTclController} = require('../../tcl/utils');
 const {deployCng1400} = require('../../helpers/deploy');

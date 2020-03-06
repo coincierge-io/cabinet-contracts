@@ -1,8 +1,8 @@
-const {expect, expectBignumberEqual} = require('../../../../common/test/helpers')
-const {getContributor, getTeamFundAddress, getBountyAddress} = require('../../../../common/test/helpers/address')
+const {expect, expectBignumberEqual} = require('../../helpers')
+const {getContributor, getTeamFundAddress, getBountyAddress} = require('../../helpers/address')
 const {deploy} = require('../../helpers/deploy')
-const {expectVMException, toWei, getTokens} = require('../../../../common/test/helpers/utils')
-const {increaseTimeTo} = require('../../../../common/test/helpers/timeUtils')
+const {expectVMException, toWei, getTokens} = require('../../helpers/utils')
+const {increaseTimeTo} = require('../../helpers/timeUtils')
 
 contract('withdraw tokens', accounts => {
   const teamFundAddress = getTeamFundAddress(accounts);

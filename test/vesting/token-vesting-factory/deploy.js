@@ -1,8 +1,8 @@
 const TokenVesting = artifacts.require('TokenVesting')
-const {expect} = require('../../../../common/test/helpers')
-const {expectVMException} = require('../../../../common/test/helpers/utils')
-const {duration} = require('../../../../common/test/helpers/timeUtils')
-const {ZERO_ADDRESS, getContributor, getDefaultAddress} = require('../../../../common/test/helpers/address')
+const {expect} = require('../../helpers')
+const {expectVMException} = require('../../helpers/utils')
+const {duration} = require('../../helpers/timeUtils')
+const {ZERO_ADDRESS, getContributor, getDefaultAddress} = require('../../helpers/address')
 const {findEvent} = require('../../helpers/events')
 const {deployTokenVestingFactory} = require('../../helpers/deploy')
 

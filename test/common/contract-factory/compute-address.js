@@ -1,5 +1,5 @@
 const fs = require('fs');
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {
   deployMockContractFactory,
   computeContractAddress,

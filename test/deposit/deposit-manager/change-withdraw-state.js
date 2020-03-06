@@ -1,6 +1,6 @@
 const EthDeposit = artifacts.require('EthDeposit');
 const StablecoinDeposit = artifacts.require('StablecoinDeposit');
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deployDepositManager} = require('../../helpers/deploy');
 
 contract('DepositManager: changeWithdrawState', accounts => {

@@ -1,4 +1,4 @@
-const {expectVMException} = require('../../../../common/test/helpers/utils');
+const {expectVMException} = require('../../helpers/utils');
 const {deployCng1404} = require('../../helpers/deploy');
 
 contract('CNG1404: ctor', accounts => {

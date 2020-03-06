@@ -1,13 +1,13 @@
 const CappedMintableToken = artifacts.require('CappedMintableToken')
-const {expect, expectBignumberEqual} = require('../../../../common/test/helpers')
+const {expect, expectBignumberEqual} = require('../../helpers/')
 const {deployEscrowManager, totalSupplyInMillions, tokenAvailableForSaleInMillions} = require('../../helpers/deploy')
-const {shouldFailWithMessage, million} = require('../../../../common/test/helpers/utils')
+const {shouldFailWithMessage, million} = require('../../helpers/utils')
 const {
   getDefaultAddress, 
   getWalletAddress, 
   ZERO_ADDRESS, 
   EOA_ADDRESS
-} = require('../../../../common/test/helpers/address')
+} = require('../../helpers/address')
 
 contract('EscrowManager: constructor', accounts => {
   let escrowManager;

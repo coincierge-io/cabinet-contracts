@@ -1,7 +1,7 @@
 const {deployTokenRepository, deployCappedMintableToken,  Currencies} = require('../../helpers/deploy')
-const {expect} = require('../../../../common/test/helpers')
-const {EOA_ADDRESS} = require('../../../../common/test/helpers/address')
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils')
+const {expect} = require('../../../helpers')
+const {EOA_ADDRESS} = require('../../helpers/address')
+const {shouldFailWithMessage} = require('../../helpers/utils')
 
 contract('TokenRepository: registerToken', accounts => {
   let tokenRepository;

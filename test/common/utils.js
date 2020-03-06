@@ -2,7 +2,7 @@ const ContractFactory = artifacts.require('ContractFactory');
 const MockContractFactory = artifacts.require('MockContractFactory');
 const {getDeployData} = require('../../../../js/packages/eth-utils/core/v1/tx');
 const {getContract} = require('../../../../js/packages/eth-utils/contracts/v1/Contract');
-const {soliditySha3} = require('../../../common/test/helpers/utils');
+const {soliditySha3} = require('../helpers/utils');
 
 const deployMockContractFactory = async () => {
   const contractFactory = await ContractFactory.new();

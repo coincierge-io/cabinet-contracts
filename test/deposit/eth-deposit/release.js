@@ -1,12 +1,12 @@
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deployEthDeposit, Currencies} = require('../../helpers/deploy');
 const {
   getContributor,
   getDefaultAddress,
   getWalletAddress
-} = require('../../../../common/test/helpers/address');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
-const {toWei, getBalance} = require('../../../../common/test/helpers/utils');
+} = require('../../helpers/address');
+const {shouldFailWithMessage} = require('../../helpers/utils');
+const {toWei, getBalance} = require('../../helpers/utils');
 const {findEvent} = require('../../helpers/events');
 
 contract('EthDeposit: release', accounts => {

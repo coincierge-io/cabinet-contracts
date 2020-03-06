@@ -1,6 +1,6 @@
-const {expect, expectBignumberEqual} = require('../../../../common/test/helpers');
-const {getNonWhitelistedAdress} = require('../../../../common/test/helpers/address');
-const {getContributor} = require('../../../../common/test/helpers/address');
+const {expect, expectBignumberEqual} = require('../../helpers');
+const {getNonWhitelistedAdress} = require('../../helpers/address');
+const {getContributor} = require('../../helpers/address');
 const {findEvent} = require('./events');
 const {
   toWei,
@@ -9,7 +9,7 @@ const {
   shouldFailWithMessage,
   moveToOpeningTime,
   moveToClosingTime
-} = require('../../../../common/test/helpers/utils');
+} = require('../../helpers/utils');
 
 const commonTests = (
   accounts,

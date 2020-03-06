@@ -1,9 +1,9 @@
 const EthEscrow = artifacts.require('EthEscrow')
 const StablecoinEscrow = artifacts.require('StablecoinEscrow')
-const {expect} = require('../../../../common/test/helpers')
+const {expect} = require('../../helpers/')
 const {deployEscrowManager} = require('../../helpers/deploy')
-const {getContributor} = require('../../../../common/test/helpers/address')
-const {moveToClosingTime, shouldFailWithMessage} = require('../../../../common/test/helpers/utils')
+const {getContributor} = require('../../helpers/address')
+const {moveToClosingTime, shouldFailWithMessage} = require('../../helpers/utils')
 
 
 contract('EscrowManager: changeRefundState', accounts => {

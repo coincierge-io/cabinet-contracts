@@ -1,7 +1,7 @@
-const {expect} = require('../../../../common/test/helpers')
+const {expect} = require('../../helpers')
 const {deployTimeGuard} = require('../../helpers/deploy')
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils')
-const {add, sub} = require('../../../../common/test/helpers/date')
+const {shouldFailWithMessage} = require('../../helpers/utils')
+const {add, sub} = require('../../helpers/date')
 
 contract('TimeGuard: extendTime', accounts => {
   let customTimeGuard;

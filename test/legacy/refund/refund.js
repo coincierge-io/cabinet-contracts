@@ -1,8 +1,8 @@
-const {expect} = require('../../../../common/test/helpers')
-const {getContributor, getTeamFundAddress, getBountyAddress} = require('../../../../common/test/helpers/address')
+const {expect} = require('../../helpers')
+const {getContributor, getTeamFundAddress, getBountyAddress} = require('../../helpers/address')
 const {deploy} = require('../../helpers/deploy')
-const {expectVMException, toWei, balanceDeltaAfterAction} = require('../../../../common/test/helpers/utils')
-const {increaseTimeTo} = require('../../../../common/test/helpers/utils')
+const {expectVMException, toWei, balanceDeltaAfterAction} = require('../../helpers/utils')
+const {increaseTimeTo} = require('../../helpers/utils')
 
 contract('refund', accounts => {
   const teamFundAddress = getTeamFundAddress(accounts);

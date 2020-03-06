@@ -1,7 +1,7 @@
-const {getTclActors, getDefaultAddress} = require('../../../../common/test/helpers/address');
-const {hexToUtf8, toHex, hexToBytes, getTokens} = require('../../../../common/test/helpers/utils');
+const {getTclActors, getDefaultAddress} = require('../../helpers/address');
+const {hexToUtf8, toHex, hexToBytes, getTokens} = require('../../helpers/utils');
 const {deployAndSetupCng1400} = require('../../helpers/deploy');
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../../helpers');
 const {ethereumStatusCodes} = require('../../tcl/utils');
 
 contract('erc1594: canTransfer', accounts => {

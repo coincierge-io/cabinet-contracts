@@ -1,9 +1,9 @@
-const {expect, expectBignumberEqual} = require('../../../../../common/test/helpers');
-const {getTokens, toHex, hexToBytes, hexToUtf8} = require('../../../../../common/test/helpers/utils');
-const {getTclActors} = require('../../../../../common/test/helpers/address');
+const {expect, expectBignumberEqual} = require('../../helpers');
+const {getTokens, toHex, hexToBytes, hexToUtf8} = require('../../../helpers/utils');
+const {getTclActors} = require('../../../helpers/address');
 const {checkpointError} = require('../../../../../../js/packages/eth-utils/data/v1/checkpoint');
-const {add, fromSolDate} = require('../../../../../common/test/helpers/date');
-const {latestTime, increaseTimeTo} = require('../../../../../common/test/helpers/timeUtils');
+const {add, fromSolDate} = require('../../../helpers/date');
+const {latestTime, increaseTimeTo} = require('../../../helpers/timeUtils');
 const {deployCng1400} = require('../../../helpers/deploy');
 const {
   deployTclRepository, 

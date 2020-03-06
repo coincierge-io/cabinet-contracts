@@ -1,7 +1,7 @@
-const {expect} = require('../../../../common/test/helpers');
-const {getTclActors} = require('../../../../common/test/helpers/address');
+const {expect} = require('../../../helpers');
+const {getTclActors} = require('../../helpers/address');
 const {deployAndSetupCng1400} = require('../../helpers/deploy');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 
 contract('erc1644: setIsControllable', accounts => {
   let cng1400;

@@ -1,5 +1,5 @@
-const {expect, expectBignumberEqual} = require('../../../../common/test/helpers');
-const {getTclActors} = require('../../../../common/test/helpers/address');
+const {expect, expectBignumberEqual} = require('../../helpers');
+const {getTclActors} = require('../../helpers/address');
 const {deployDepositManager, deployAndSetupCng1400, Currencies} = require('../../helpers/deploy');
 const {registerSpe} = require('../../identity/utils');
 const {
@@ -7,7 +7,7 @@ const {
   getBalance,
   getTokens,
   shouldFailWithMessage
-} = require('../../../../common/test/helpers/utils');
+} = require('../../helpers/utils');
 
 contract('DepositManager: issue', accounts => {
   let depositManager;

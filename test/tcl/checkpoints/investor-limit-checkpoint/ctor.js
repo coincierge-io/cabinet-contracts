@@ -1,7 +1,7 @@
-const {expect} = require('../../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deployInvestorLimitCheckpoint} = require('../../utils');
 const {deployCappedMintableToken} = require('../../../helpers/deploy');
-const {shouldFailWithMessage} = require('../../../../../common/test/helpers/utils');
+const {shouldFailWithMessage} = require('../../../helpers/utils');
 const {checkpointControler} = require('../../../../../../js/packages/eth-utils/data/v1/checkpoint');
 
 contract('InvestorLimitCheckpoint: ctor', accounts => {

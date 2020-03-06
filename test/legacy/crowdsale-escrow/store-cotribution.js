@@ -1,13 +1,13 @@
-const {expect, expectBignumberEqual} = require('../../../../common/test/helpers')
+const {expect, expectBignumberEqual} = require('../../helpers')
 const {deployCrowdsaleEscrow} = require('../../helpers/deploy')
-const {getContributor} = require('../../../../common/test/helpers/address')
+const {getContributor} = require('../../helpers/address')
 const {
   toWei, 
   getBlock, 
   expectVMException, 
   moveToOpeningTime, 
   moveToClosingTime
-} = require('../../../../common/test/helpers/utils')
+} = require('../../helpers/utils')
 const {findEvent} = require('../../helpers/events')
 
 contract('CrowdsaleEscrow: storeContibution', accounts => {

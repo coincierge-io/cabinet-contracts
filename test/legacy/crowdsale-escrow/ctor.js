@@ -1,9 +1,9 @@
 const CappedMintableToken = artifacts.require('CappedMintableToken')
-const {expect, expectBignumberEqual} = require('../../../../common/test/helpers')
+const {expect, expectBignumberEqual} = require('../../helpers')
 const {deployCrowdsaleEscrow, totalSupplyInMillions, tokenAvailableForSaleInMillions} = require('../../helpers/deploy')
-const {expectVMException, million} = require('../../../../common/test/helpers/utils')
-const {getDefaultAddress, getWalletAddress, ZERO_ADDRESS} = require('../../../../common/test/helpers/address')
-const {add, sub} = require('../../../../common/test/helpers/date')
+const {expectVMException, million} = require('../../helpers/utils')
+const {getDefaultAddress, getWalletAddress, ZERO_ADDRESS} = require('../../helpers/address')
+const {add, sub} = require('../../helpers/date')
 
 
 contract('CrowdsaleEscrow: constructor', accounts => {

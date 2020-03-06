@@ -1,12 +1,12 @@
 const {deployDeposit} = require('./common');
-const {expectBignumberEqual} = require('../../../../common/test/helpers');
+const {expectBignumberEqual} = require('../../helpers');
 const {Currencies} = require('../../helpers/deploy');
 const {commonTests} = require('../../helpers/store-deposit');
 const {
   getTokens,
   shouldFailWithMessage
-} = require('../../../../common/test/helpers/utils');
-const {getContributor, getNonWhitelistedAdress} = require('../../../../common/test/helpers/address');
+} = require('../../helpers/utils');
+const {getContributor, getNonWhitelistedAdress} = require('../../helpers/address');
 
 contract('StablecoinDeposit: confirmDeposit', accounts => {
   let stablecoinDeposit;

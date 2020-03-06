@@ -1,10 +1,10 @@
 const ClaimRegistry = artifacts.require('ClaimRegistry');
-const {getDefaultAddress, getTclActors} = require('../../../common/test/helpers/address');
+const {getDefaultAddress, getTclActors} = require('../../helpers/address');
 const {
   encodeBytes32Param,
   hexToUtf8,
   soliditySha3
-} = require('../../../common/test/helpers/utils');
+} = require('../../helpers/utils');
 
 const ZERO_KEY = '0x0000000000000000000000000000000000000000000000000000000000000000';
 

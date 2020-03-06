@@ -1,12 +1,12 @@
-const {expect} = require('../../../../../common/test/helpers');
-const {sub, add} = require('../../../../../common/test/helpers/date');
+const {expect} = require('../../helpers');
+const {sub, add} = require('../../../helpers/date');
 const {
   toHex, 
   hexToBytes, 
   hexToUtf8,
   shouldFailWithMessage
-} = require('../../../../../common/test/helpers/utils');
-const {ZERO_ADDRESS} = require('../../../../../common/test/helpers/address');
+} = require('../../../helpers/utils');
+const {ZERO_ADDRESS} = require('../../../helpers/address');
 const {findEvent} = require('../../../helpers/events');
 const {deployTimedKycAmlCheckpoint} = require('../../utils');
 

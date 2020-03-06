@@ -1,9 +1,9 @@
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deployEthDeposit, Currencies} = require('../../helpers/deploy');
-const {getContributor, getDefaultAddress} = require('../../../../common/test/helpers/address');
+const {getContributor, getDefaultAddress} = require('../../helpers/address');
 const {
   toWei, shouldFailWithMessage, balanceDeltaAfterAction
-} = require('../../../../common/test/helpers/utils');
+} = require('../../helpers/utils');
 const {findEvent} = require('../../helpers/events');
 
 contract('EthDeposit: withdraw', accounts => {

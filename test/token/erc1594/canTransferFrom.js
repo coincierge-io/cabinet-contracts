@@ -1,6 +1,6 @@
-const {expect} = require('../../../../common/test/helpers');
-const {hexToUtf8, toHex, hexToBytes, getTokens} = require('../../../../common/test/helpers/utils');
-const {getTclActors, getDefaultAddress, ZERO_ADDRESS} = require('../../../../common/test/helpers/address');
+const {expect} = require('../../../helpers');
+const {hexToUtf8, toHex, hexToBytes, getTokens} = require('../../helpers/utils');
+const {getTclActors, getDefaultAddress, ZERO_ADDRESS} = require('../../helpers/address');
 const {deployAndSetupCng1400} = require('../../helpers/deploy');
 const {ethereumStatusCodes} = require('../../tcl/utils');
 

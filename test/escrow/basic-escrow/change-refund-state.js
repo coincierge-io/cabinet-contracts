@@ -1,7 +1,7 @@
-const {expect} = require('../../../../common/test/helpers')
+const {expect} = require('../../helpers')
 const {deployBasicEscrow} = require('../../helpers/deploy')
-const {expectVMException} = require('../../../../common/test/helpers/utils')
-const {getContributor} = require('../../../../common/test/helpers/address')
+const {expectVMException} = require('../../helpers/utils')
+const {getContributor} = require('../../helpers/address')
 
 contract('BasicEscrow: changeRefundState', accounts => {
   let basicEscrow;

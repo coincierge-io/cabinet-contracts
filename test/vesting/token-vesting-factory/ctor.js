@@ -1,5 +1,5 @@
 const TokenVestingFactory = artifacts.require('TokenVestingFactory')
-const {expect} = require('../../../../common/test/helpers')
+const {expect} = require('../../helpers')
 const {deployTokenVestingFactory} = require('../../helpers/deploy')
 
 contract('TokenVestingFactory: ctor', () => {

@@ -1,7 +1,7 @@
-const {expect} = require('../../../../../common/test/helpers');
+const {expect} = require('../../../../helpers');
 const {deployIssuerRole} = require('../../utils');
-const {ZERO_ADDRESS} = require('../../../../../common/test/helpers/address');
-const {shouldFailWithMessage} = require('../../../../../common/test/helpers/utils');
+const {ZERO_ADDRESS} = require('../../../helpers/address');
+const {shouldFailWithMessage} = require('../../../helpers/utils');
 
 contract('IssuerRole: ctor', accounts => {
   let issuerRole;

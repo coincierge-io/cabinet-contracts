@@ -1,6 +1,6 @@
-const {expect} = require('../../../../../common/test/helpers');
-const {getTokens, toHex, hexToBytes} = require('../../../../../common/test/helpers/utils');
-const {ZERO_ADDRESS, getTclActors} = require('../../../../../common/test/helpers/address');
+const {expect} = require('../../helpers');
+const {getTokens, toHex, hexToBytes} = require('../../../helpers/utils');
+const {ZERO_ADDRESS, getTclActors} = require('../../../helpers/address');
 const {deployCng1400} = require('../../../helpers/deploy');
 const {
   deployCountryLimitCheckpoint, 

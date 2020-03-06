@@ -1,7 +1,7 @@
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deployBasicDeposit} = require('../../helpers/deploy');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
-const {getDefaultAddress, getWalletAddress, ZERO_ADDRESS} = require('../../../../common/test/helpers/address');
+const {shouldFailWithMessage} = require('../../helpers/utils');
+const {getDefaultAddress, getWalletAddress, ZERO_ADDRESS} = require('../../helpers/address');
 
 
 contract('BasicDeposit: constructor', accounts => {

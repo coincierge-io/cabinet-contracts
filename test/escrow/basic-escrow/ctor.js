@@ -1,8 +1,8 @@
-const {expect} = require('../../../../common/test/helpers')
+const {expect} = require('../../helpers/')
 const {deployBasicEscrow} = require('../../helpers/deploy')
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils')
-const {getDefaultAddress, getWalletAddress, ZERO_ADDRESS} = require('../../../../common/test/helpers/address')
-const {add, sub} = require('../../../../common/test/helpers/date')
+const {shouldFailWithMessage} = require('../../helpers/utils')
+const {getDefaultAddress, getWalletAddress, ZERO_ADDRESS} = require('../../helpers/address')
+const {add, sub} = require('../../helpers/date')
 
 
 contract('BasicEscrow: constructor', accounts => {

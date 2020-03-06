@@ -1,7 +1,7 @@
 const TokenDistribution = artifacts.require('TokenDistribution');
-const {expect} = require('../../../../common/test/helpers');
-const {expectVMException} = require('../../../../common/test/helpers/utils');
-const {ZERO_ADDRESS, getContributor, getDefaultAddress} = require('../../../../common/test/helpers/address');
+const {expect} = require('../../helpers');
+const {expectVMException} = require('../../helpers/utils');
+const {ZERO_ADDRESS, getContributor, getDefaultAddress} = require('../../helpers/address');
 const {findEvent} = require('../../helpers/events');
 const {
   deployTokenDistributionFactory,

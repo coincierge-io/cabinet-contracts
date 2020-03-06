@@ -3,8 +3,8 @@ const {
   deployWhitelistOracle
 } = require('../../helpers/deploy');
 const {findEvent} = require('../../helpers/events');
-const {expect} = require('../../../../common/test/helpers');
-const {getTokenOwnerAddress} = require('../../../../common/test/helpers/address');
+const {expect} = require('../../../helpers');
+const {getTokenOwnerAddress} = require('../../helpers/address');
 
 const CNG1404Token = artifacts.require('CNG1404');
 

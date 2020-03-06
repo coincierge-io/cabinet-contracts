@@ -2,7 +2,7 @@ const {commonTests} = require('../../helpers/store-deposit');
 const {deployEthDeposit, Currencies} = require('../../helpers/deploy');
 const {
   toWei
-} = require('../../../../common/test/helpers/utils');
+} = require('../../helpers/utils');
 
 contract('EthDeposit: storeDeposit', accounts => {
   describe('Common', async () => {

@@ -1,7 +1,7 @@
 const {deployAssetRepository, deployMockContract} = require('../../helpers/deploy');
-const {expect} = require('../../../../common/test/helpers');
-const {getTokenOwnerAddress} = require('../../../../common/test/helpers/address');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {expect} = require('../../helpers');
+const {getTokenOwnerAddress} = require('../../helpers/address');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 
 
 contract('AssetRepository: registerAsset', accounts => {

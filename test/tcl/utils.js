@@ -13,8 +13,8 @@ const BlockedAccountCheckpoint = artifacts.require('BlockedAccountCheckpoint');
 const CountryLimitCheckpoint = artifacts.require('CountryLimitCheckpoint');
 const InvestorLimitCheckpoint = artifacts.require('InvestorLimitCheckpoint');
 const SPEVerifier = artifacts.require('SPEVerifier');
-const {getDefaultAddress, getTclActors} = require('../../../common/test/helpers/address');
-const {toHex, hexToBytes} = require('../../../common/test/helpers/utils');
+const {getDefaultAddress, getTclActors} = require('../../helpers/address');
+const {toHex, hexToBytes} = require('../../helpers/utils');
 const {flatten} = require('../../../../js/packages/common/fn');
 const {operators, ethereumStatusCodes, checkpointCodes} = require('../../../../js/packages/eth-utils/data/v1/checkpoint');
 const {

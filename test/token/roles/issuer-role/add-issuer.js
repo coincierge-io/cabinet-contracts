@@ -1,7 +1,7 @@
-const {expect} = require('../../../../../common/test/helpers')
+const {expect} = require('../../../../helpers')
 const {deployIssuerRole} = require('../../utils');
 const {findEvent} = require('../../../helpers/events');
-const {shouldFailWithMessage} = require('../../../../../common/test/helpers/utils');
+const {shouldFailWithMessage} = require('../../../helpers/utils');
 
 contract('IssuerRole: addIssuer', accounts => {
   const issuer = accounts[1];

@@ -29,14 +29,14 @@ const AtomicSwap = artifacts.require('AtomicSwap');
 const AccessControl = artifacts.require('AccessControl');
 const MockRestrictedAccess = artifacts.require('MockRestrictedAccess');
 const AssetRepository = artifacts.require('AssetRepository');
-const {add} = require('../../../common/test/helpers/date');
+const {add} = require('../../helpers/date');
 const {
   getWalletAddress,
   getDefaultAddress,
   getContributor,
   getTclActors
-} = require('../../../common/test/helpers/address');
-const {million, getTokens} = require('../../../common/test/helpers/utils');
+} = require('../../helpers/address');
+const {million, getTokens} = require('../../helpers/utils');
 const {
   setupTclRepository,
   deployTclControllerWithDefaultCheckpoints,

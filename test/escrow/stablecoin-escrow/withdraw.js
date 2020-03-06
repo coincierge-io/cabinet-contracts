@@ -1,8 +1,8 @@
-const {expect, expectBignumberEqual} = require('../../../../common/test/helpers')
+const {expect, expectBignumberEqual} = require('../../helpers/')
 const {deployEscrow} = require('./common')
 const {Currencies} = require('../../helpers/deploy')
-const {getContributor, getDefaultAddress} = require('../../../../common/test/helpers/address')
-const {getTokens, shouldFailWithMessage, moveToOpeningTime} = require('../../../../common/test/helpers/utils')
+const {getContributor, getDefaultAddress} = require('../../helpers/address')
+const {getTokens, shouldFailWithMessage, moveToOpeningTime} = require('../../helpers/utils')
 const {findEvent} = require('../../helpers/events')
 
 contract('StablecoinEscrow: withdraw', accounts => {

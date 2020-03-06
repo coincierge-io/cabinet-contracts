@@ -1,8 +1,8 @@
-const {getTclActors} = require('../../../../common/test/helpers/address');
+const {getTclActors} = require('../../helpers/address');
 const {deployAccessControl} = require('../../helpers/deploy');
 const {getAccessToken} = require('../../../../../js/packages/eth-utils/data/v1/accessControl');
 const {getMethodSelectorFromAbi} = require('../../../../../js/packages/eth-utils/contracts/v1/Contract');
-const {getPrivateKeyFromAddress} = require('../../../../common/test/helpers/signatures');
+const {getPrivateKeyFromAddress} = require('../../helpers/signatures');
 
 
 contract('AccessControl: getPayload', accounts => {

@@ -1,6 +1,6 @@
-const {expect} = require('../../../../common/test/helpers');
-const {shouldFailWithMessage, bytesToHex, padRight} = require('../../../../common/test/helpers/utils');
-const {ZERO_ADDRESS} = require('../../../../common/test/helpers/address');
+const {expect} = require('../../helpers');
+const {shouldFailWithMessage, bytesToHex, padRight} = require('../../helpers/utils');
+const {ZERO_ADDRESS} = require('../../helpers/address');
 const {findEvent} = require('../../helpers/events');
 const {
   deployClaimRegistry,

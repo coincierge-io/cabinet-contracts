@@ -1,8 +1,8 @@
 const CNG1400 = artifacts.require('CNG1400');
 const Bytes32Utils = artifacts.require('Bytes32Utils');
-const {expectBignumberEqual} = require('../../../../common/test/helpers');
-const {toHex, hexToBytes, getTokens, shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
-const {getTclActors} = require('../../../../common/test/helpers/address');
+const {expectBignumberEqual} = require('../../../helpers');
+const {toHex, hexToBytes, getTokens, shouldFailWithMessage} = require('../../helpers/utils');
+const {getTclActors} = require('../../helpers/address');
 const {deployClaimRegistry} = require('../../identity/utils');
 const {deployAndSetupCng1400} = require('../../helpers/deploy');
 const {setupCountryLimitCheckpoint} = require('../utils');

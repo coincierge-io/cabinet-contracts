@@ -1,7 +1,7 @@
-const {expect} = require('../../../../../common/test/helpers');
+const {expect} = require('../../../../helpers');
 const {deployIssuerRole} = require('../../utils');
 const {findEvent} = require('../../../helpers/events');
-const {expectVMException} = require('../../../../../common/test/helpers/utils');
+const {expectVMException} = require('../../../helpers/utils');
 
 contract('IssuerRole: removeIssuer', accounts => {
   const issuer = accounts[1];

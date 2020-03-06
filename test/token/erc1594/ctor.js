@@ -1,6 +1,6 @@
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 const {deployAndSetupCng1400} = require('../../helpers/deploy');
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../../helpers');
 
 contract('erc1594: ctor', accounts => {
   it('should revert if the tclController address is not a contract', async () => {

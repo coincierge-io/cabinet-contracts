@@ -1,7 +1,7 @@
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deployControllerRole} = require('../utils');
 const {findEvent} = require('../../helpers/events');
-const {expectVMException} = require('../../../../common/test/helpers/utils');
+const {expectVMException} = require('../../helpers/utils');
 
 contract('ControllerRole: removeController', accounts => {
   const mainController = accounts[1];

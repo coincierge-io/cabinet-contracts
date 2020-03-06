@@ -1,10 +1,10 @@
 const MintableToken = artifacts.require('ERC20Capped')
 const TokenVesting = artifacts.require('TokenVesting')
-const {expect, expectBignumberEqual} = require('../../../../common/test/helpers')
-const {expectVMException, getBlock, getTokens, million, toBigNumber} = require('../../../../common/test/helpers/utils')
-const {getContributor, getTokenOwnerAddress} = require('../../../../common/test/helpers/address')
-const {toSolDate} = require('../../../../common/test/helpers/date')
-const {increaseTimeTo, duration} = require('../../../../common/test/helpers/timeUtils')
+const {expect, expectBignumberEqual} = require('../../helpers')
+const {expectVMException, getBlock, getTokens, million, toBigNumber} = require('../../helpers/utils')
+const {getContributor, getTokenOwnerAddress} = require('../../helpers/address')
+const {toSolDate} = require('../../helpers/date')
+const {increaseTimeTo, duration} = require('../../helpers/timeUtils')
 const {deployTokenVestingFactory} = require('../../helpers/deploy')
 
 contract('TokenVesting - release', accounts => {

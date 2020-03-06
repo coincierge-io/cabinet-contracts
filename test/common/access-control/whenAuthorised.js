@@ -1,8 +1,8 @@
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
-const {getTclActors} = require('../../../../common/test/helpers/address');
+const {shouldFailWithMessage} = require('../../helpers/utils');
+const {getTclActors} = require('../../helpers/address');
 const {getAccessToken} = require('../../../../../js/packages/eth-utils/data/v1/accessControl');
 const {deployMockRestrictedAccess} = require('../../helpers/deploy');
-const {getPrivateKeyFromAddress} = require('../../../../common/test/helpers/signatures');
+const {getPrivateKeyFromAddress} = require('../../helpers/signatures');
 const {getMethodSelectorFromAbi} = require('../../../../../js/packages/eth-utils/contracts/v1/Contract');
 
 

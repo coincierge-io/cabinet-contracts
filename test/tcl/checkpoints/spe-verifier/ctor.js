@@ -1,4 +1,4 @@
-const {expect} = require('../../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deploySpeVerifier} = require('../../utils');
 const {deployClaimRegistry} = require('../../../identity/utils');
 

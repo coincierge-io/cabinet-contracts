@@ -1,7 +1,7 @@
-const {expect} = require('../../../../../common/test/helpers');
-const {shouldFailWithMessage} = require('../../../../../common/test/helpers/utils');
+const {expect} = require('../../helpers');
+const {shouldFailWithMessage} = require('../../../helpers/utils');
 const {findEvent} = require('../../../helpers/events');
-const {ZERO_ADDRESS} = require('../../../../../common/test/helpers/address');
+const {ZERO_ADDRESS} = require('../../../helpers/address');
 const {deployBlockAccountCheckpoint} = require('../../utils');
 const {deployCappedMintableToken} = require('../../../helpers/deploy');
 

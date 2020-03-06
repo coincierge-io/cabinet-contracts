@@ -1,11 +1,11 @@
-const {expectBignumberEqual} = require('../../../../common/test/helpers')
+const {expectBignumberEqual} = require('../../helpers')
 const {deployMockContract} = require('../../helpers/deploy')
 const {
   getTokens,
   toHex,
   hexToBytes,
   shouldFailWithMessage
-} = require('../../../../common/test/helpers/utils')
+} = require('../../helpers/utils')
 const {
   deployTclRepository,
   deployTclController,

@@ -1,6 +1,6 @@
-const {expectBignumberEqual, expect} = require('../../../../common/test/helpers');
-const {toHex, hexToBytes, getTokens, shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
-const {getTclActors} = require('../../../../common/test/helpers/address');
+const {expectBignumberEqual, expect} = require('../../../helpers');
+const {toHex, hexToBytes, getTokens, shouldFailWithMessage} = require('../../helpers/utils');
+const {getTclActors} = require('../../helpers/address');
 const {deployAndSetupCng1400} = require('../../helpers/deploy');
 const {setupCountryLimitCheckpoint} = require('../utils');
 

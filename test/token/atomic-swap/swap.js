@@ -1,7 +1,7 @@
-const {expectBignumberEqual} = require('../../../../common/test/helpers');
-const {expectVMException, million} = require('../../../../common/test/helpers/utils');
+const {expectBignumberEqual} = require('../../../helpers');
+const {expectVMException, million} = require('../../helpers/utils');
 const {deployCappedMintableToken, deployAtomicSwap} = require('../../helpers/deploy');
-const {getDefaultAddress, getContributor} = require('../../../../common/test/helpers/address');
+const {getDefaultAddress, getContributor} = require('../../helpers/address');
 
 contract('AtomicSwap: swap', accounts => {
   const MAX_SUPPLY = million(7000);

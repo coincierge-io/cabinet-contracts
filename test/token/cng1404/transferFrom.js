@@ -1,13 +1,13 @@
-const {expectBignumberEqual} = require('../../../../common/test/helpers');
-const {expectVMException} = require('../../../../common/test/helpers/utils');
+const {expectBignumberEqual} = require('../../../helpers');
+const {expectVMException} = require('../../helpers/utils');
 const {
   getContributor
-} = require('../../../../common/test/helpers/address');
+} = require('../../helpers/address');
 const {
   VALID_SIGNATURE_NONCE_0,
   NONCE_0,
   MESSAGE
-} = require('../../../../common/test/helpers/signatures');
+} = require('../../helpers/signatures');
 const {deployCng1404} = require('../../helpers/deploy');
 
 contract('CNG1404: transferFrom', accounts => {

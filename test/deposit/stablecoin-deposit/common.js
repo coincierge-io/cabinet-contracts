@@ -4,8 +4,8 @@ const {
   deployCappedMintableToken,
   Currencies
 } = require('../../helpers/deploy');
-const {getContributor, getNonWhitelistedAdress} = require('../../../../common/test/helpers/address');
-const {getTokens} = require('../../../../common/test/helpers/utils');
+const {getContributor, getNonWhitelistedAdress} = require('../../helpers/address');
+const {getTokens} = require('../../helpers/utils');
 
 const deployDeposit = async accounts => {
   const mainController = accounts[0];

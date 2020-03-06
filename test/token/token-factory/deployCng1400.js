@@ -2,12 +2,12 @@ const CNG1400 = artifacts.require('CNG1400');
 const {deployTokenFactory, deployAssetRepository} = require('../../helpers/deploy');
 const {findEvent} = require('../../helpers/events');
 const {deployTclControllerWithDefaultCheckpoints} = require('../../tcl/utils');
-const {expect} = require('../../../../common/test/helpers');
-const {getTclActors} = require('../../../../common/test/helpers/address');
+const {expect} = require('../../../helpers');
+const {getTclActors} = require('../../helpers/address');
 const {deployClaimRegistry} = require('../../identity/utils');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 const {getAccessToken} = require('../../../../../js/packages/eth-utils/data/v1/accessControl');
-const {getPrivateKeyFromAddress} = require('../../../../common/test/helpers/signatures');
+const {getPrivateKeyFromAddress} = require('../../helpers/signatures');
 const {getMethodSelectorFromAbi} = require('../../../../../js/packages/eth-utils/contracts/v1/Contract');
 
 contract('TokenFactory: DeployCNG1400', accounts => {

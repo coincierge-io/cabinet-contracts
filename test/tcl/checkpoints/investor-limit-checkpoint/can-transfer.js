@@ -1,7 +1,7 @@
 const ClaimRegistry = artifacts.require('ClaimRegistry');
-const {expect} = require('../../../../../common/test/helpers');
-const {getTokens, toHex, hexToBytes, hexToUtf8} = require('../../../../../common/test/helpers/utils');
-const {getTclActors} = require('../../../../../common/test/helpers/address');
+const {expect} = require('../../helpers');
+const {getTokens, toHex, hexToBytes, hexToUtf8} = require('../../../helpers/utils');
+const {getTclActors} = require('../../../helpers/address');
 const {deployInvestorLimitCheckpoint, ethereumStatusCodes} = require('../../utils');
 const {deployCappedMintableToken} = require('../../../helpers/deploy');
 const {checkpointError} = require('../../../../../../js/packages/eth-utils/data/v1/checkpoint');

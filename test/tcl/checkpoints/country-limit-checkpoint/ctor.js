@@ -1,7 +1,7 @@
-const {expect} = require('../../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {deployCountryLimitCheckpoint} = require('../../utils');
 const {deployClaimRegistry} = require('../../../identity/utils');
-const {expectVMException, encodeFunctionSignature} = require('../../../../../common/test/helpers/utils');
+const {expectVMException, encodeFunctionSignature} = require('../../../helpers/utils');
 const {checkpointControler} = require('../../../../../../js/packages/eth-utils/data/v1/checkpoint');
 
 contract('CountryLimitCheckpoint: ctor', accounts => {

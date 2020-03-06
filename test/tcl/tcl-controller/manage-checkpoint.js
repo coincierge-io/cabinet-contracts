@@ -1,11 +1,11 @@
-const {expect} = require('../../../../common/test/helpers');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {expect} = require('../../helpers');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 const {
   deployCountryLimitCheckpoint, 
   deployTclRepository,
   deployTclController
 } = require('../utils');
-const {toHex, hexToBytes} = require('../../../../common/test/helpers/utils');
+const {toHex, hexToBytes} = require('../../helpers/utils');
 const {deployClaimRegistry} = require('../../identity/utils');
 
 contract('TclController: manageCheckpoint', accounts => {

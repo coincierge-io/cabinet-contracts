@@ -1,9 +1,9 @@
-const {expect} = require('../../../../../common/test/helpers');
-const {getTokens, toHex, hexToBytes, hexToUtf8} = require('../../../../../common/test/helpers/utils');
+const {expect} = require('../../helpers');
+const {getTokens, toHex, hexToBytes, hexToUtf8} = require('../../../helpers/utils');
 const {deployKycAmlCheckpoint, ethereumStatusCodes} = require('../../utils');
 const {deployCappedMintableToken} = require('../../../helpers/deploy');
-const {add} = require('../../../../../common/test/helpers/date');
-const {increaseTimeTo} = require('../../../../../common/test/helpers/timeUtils');
+const {add} = require('../../../helpers/date');
+const {increaseTimeTo} = require('../../../helpers/timeUtils');
 const {checkpointError} = require('../../../../../../js/packages/eth-utils/data/v1/checkpoint');
 const {
   deployClaimRegistry,

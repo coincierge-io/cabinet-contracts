@@ -1,14 +1,14 @@
 /* eslint-disable no-shadow */
-const {expect} = require('../../../../common/test/helpers');
+const {expect} = require('../../helpers');
 const {
   deployDepositManager
 } = require('../../helpers/deploy');
-const {shouldFailWithMessage} = require('../../../../common/test/helpers/utils');
+const {shouldFailWithMessage} = require('../../helpers/utils');
 const {
   getWalletAddress,
   ZERO_ADDRESS,
   EOA_ADDRESS
-} = require('../../../../common/test/helpers/address');
+} = require('../../helpers/address');
 
 contract('DepositManager: constructor', accounts => {
   let depositManager;
