@@ -1,0 +1,11 @@
+require('./ctor');
+require('./set-claim');
+require('./set-claims');
+require('./register-account');
+require('./unregister-account');
+require('./remove-claim');
+require('./remove-claims');
+require('./set-claim-and-register-account');
+require('./set-claims-and-register-account');
+require('./register-accounts');
+require('./unregister-accounts');

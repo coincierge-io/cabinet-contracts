@@ -1,0 +1,1 @@
+require('./issuer-role/all.test');

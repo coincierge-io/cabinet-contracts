@@ -1,0 +1,39 @@
+{
+  "name": "reference",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "author": "Pavlos Polianidis <ppoliani@gmail.com>",
+  "scripts": {
+    "start": "node_modules/.bin/ganache-cli -a 15 -e 1000 --gasLimit 8000000 --mnemonic 'master large deliver reject helmet patrol post wheel behave ordinary bundle ivory'",
+    "migrate": "node_modules/.bin/truffle compile --all && truffle migrate --reset",
+    "migrate:kovan": "node_modules/.bin/truffle compile --all && truffle migrate --reset --network kovan",
+    "migrate:live": "node_modules/.bin/truffle compile --all && truffle migrate --reset --network mainnet",
+    "compile": "node_modules/.bin/truffle compile --all",
+    "test": "scripts/test.sh test/all.test.js",
+    "currentTestRun": "scripts/test.sh test/token/erc1594/all.test.js",
+    "coverage": "scripts/coverage.sh"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.0.32",
+    "bip39": "^3.0.2",
+    "ethereumjs-wallet": "^0.6.3",
+    "openzeppelin-solidity": "^2.5.0",
+    "web3": "1.2.6"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-bignumber": "^3.0.0",
+    "date-fns": "^2.0.0-alpha.8",
+    "eth-gas-reporter": "^0.2.15",
+    "ethjs": "^0.4.0",
+    "ganache-cli": "^6.9.1",
+    "openzeppelin-test-helpers": "^0.5.1",
+    "solidity-coverage": "^0.7.2",
+    "truffle": "^5.1.16",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  }
+}

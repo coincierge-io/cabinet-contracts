@@ -1,0 +1,10 @@
+require('./canTransfer');
+require('./canTransferFrom');
+require('./ctor');
+require('./issue');
+require('./redeem');
+require('./redeemFrom');
+require('./transfer');
+require('./transferFrom');
+require('./transferFromWithData');
+require('./transferWithData');
