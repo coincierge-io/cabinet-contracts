@@ -1,7 +1,6 @@
 {
-  "name": "reference",
+  "name": "cabinet-contracts",
   "version": "1.0.0",
-  "private": true,
   "main": "index.js",
   "author": "Pavlos Polianidis <ppoliani@gmail.com>",
   "scripts": {
